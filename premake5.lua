@@ -1,5 +1,5 @@
 project "GLFW"
-    kind "StaticLib"Add commentMore actions
+    kind "StaticLib"
     language "C"
     
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -19,7 +19,7 @@ project "GLFW"
     }
     
 	filter "system:windows"
-        buildoptions { "-std=c11", "-lgdi32" }
+        buildoptions { "/utf-8" }
         systemversion "latest"
         staticruntime "On"
         
